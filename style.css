@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Navbar Started   */
+
+nav {
+    display: flex;
+    width: 99.8vw;
+    position: fixed;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-bar li {
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+.nav-bar li a {
+    color: white;
+    text-decoration: none;
+}
+
+header button {
+    color: white;
+    padding: 3px 27px;
+    text-align: center;
+    border-radius: 7px;
+}
+header button {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+.btn-login {
+    color: white;
+    padding: 6px 27px;
+    border-radius: 7px;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-btn{
+    display: flex;
+    padding: 14px;
+}
+
+.nav-bar li:hover {
+    background-color: #9d9d9d;
+    text-decoration: none;
+    color: black;
+
+}
+.nav-btn button:hover{
+    background-color: #b3aeae;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+/* Navbar Ended   */
+
+/* Home STarted   */
+
+.home-bg {
+    object-fit: contain;
+    background: url('assets/img/home-bg.jpg') no-repeat center center/cover;
+    height: 129vh;
+}
+
+/* Home Section Ended   */
+
+/* Only Separation  Started  */
+
+.separation {
+    height: 1px;
+    background-color: #9d9d9d;
+}
+
+/* Only Separation  Ended */
+
+/* Section 1 Started   */
+
+.main-heading-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 5px 0px;
+    line-height: 28px;
+}
+
+.main-heading-paragraph h3 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.main-heading-paragraph i {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.main-heading-paragraph p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.main-heading-paragraph :nth-child(3) {
+    width: 58%;
+}
+
+.articles-main {
+    display: flex;
+    /* justify-content: center; */
+    background-color: #ededed;
+    align-items: center;
+    text-align: center;
+    padding: 0px 9px;
+}
+
+.articles {
+    display: flex;
+    width: 100%;
+
+}
+
+.articles p {
+    padding: 5px;
+
+}
+
+.articles img {
+    /* height: 435px; */
+    width: 100%;
+    /* height: 50%; */
+
+    padding: 6px;
+}
+
+.article-width{
+    width: 100%;
+    padding: 5px;
+}
+
+/* Section 1 Ended   */
+
+/* Footer started   */
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-identity-icon {
+    height: 40px;
+}
+
+.fa-brands {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 25px;
+    padding: 2px;
+}
+
+/* Footer Ended   */
+
+
+@media screen and (max-width: 612px){
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    
+    .home-bg{
+        height: 70vh;
+    }
+    .articles {
+        flex-wrap: wrap;
+    
+    }
+    .main-heading-paragraph :nth-child(3){
+        width:100%;
+    }
+    .main-heading-paragraph{
+        margin: 0;
+        width: 100%;
+    }
+    .nav-bar li a {
+        color: white;
+        font-size: 12px;
+    }
+    nav button{
+        padding: 1px 14px;
+        font-size: 0.8em;
+    }
+    .nav-btn {
+        padding-bottom: 7px;
+    }
+}
